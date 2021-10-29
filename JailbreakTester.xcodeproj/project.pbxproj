@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		D54E9CC0272B507C00AA2330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E9CBF272B507C00AA2330 /* AppDelegate.swift */; };
 		D54E9CC2272B507C00AA2330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E9CC1272B507C00AA2330 /* SceneDelegate.swift */; };
-		D54E9CC4272B507C00AA2330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E9CC3272B507C00AA2330 /* ViewController.swift */; };
-		D54E9CC7272B507C00AA2330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54E9CC5272B507C00AA2330 /* Main.storyboard */; };
 		D54E9CC9272B507D00AA2330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54E9CC8272B507D00AA2330 /* Assets.xcassets */; };
 		D54E9CCC272B507D00AA2330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54E9CCA272B507D00AA2330 /* LaunchScreen.storyboard */; };
+		D54E9CD4272B519400AA2330 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E9CD3272B519400AA2330 /* MainViewController.swift */; };
+		D54E9CD7272B527C00AA2330 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E9CD6272B527C00AA2330 /* UIDevice+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D54E9CBC272B507C00AA2330 /* JailbreakTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JailbreakTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54E9CBF272B507C00AA2330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D54E9CC1272B507C00AA2330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D54E9CC3272B507C00AA2330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D54E9CC6272B507C00AA2330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D54E9CC8272B507D00AA2330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D54E9CCB272B507D00AA2330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D54E9CCD272B507D00AA2330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54E9CD3272B519400AA2330 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D54E9CD6272B527C00AA2330 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		D54E9CBE272B507C00AA2330 /* JailbreakTester */ = {
 			isa = PBXGroup;
 			children = (
+				D54E9CD5272B526600AA2330 /* Extensions */,
 				D54E9CBF272B507C00AA2330 /* AppDelegate.swift */,
 				D54E9CC1272B507C00AA2330 /* SceneDelegate.swift */,
-				D54E9CC3272B507C00AA2330 /* ViewController.swift */,
-				D54E9CC5272B507C00AA2330 /* Main.storyboard */,
 				D54E9CC8272B507D00AA2330 /* Assets.xcassets */,
 				D54E9CCA272B507D00AA2330 /* LaunchScreen.storyboard */,
 				D54E9CCD272B507D00AA2330 /* Info.plist */,
+				D54E9CD3272B519400AA2330 /* MainViewController.swift */,
 			);
 			path = JailbreakTester;
+			sourceTree = "<group>";
+		};
+		D54E9CD5272B526600AA2330 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D54E9CD6272B527C00AA2330 /* UIDevice+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +135,6 @@
 			files = (
 				D54E9CCC272B507D00AA2330 /* LaunchScreen.storyboard in Resources */,
 				D54E9CC9272B507D00AA2330 /* Assets.xcassets in Resources */,
-				D54E9CC7272B507C00AA2330 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D54E9CC4272B507C00AA2330 /* ViewController.swift in Sources */,
+				D54E9CD4272B519400AA2330 /* MainViewController.swift in Sources */,
+				D54E9CD7272B527C00AA2330 /* UIDevice+Extensions.swift in Sources */,
 				D54E9CC0272B507C00AA2330 /* AppDelegate.swift in Sources */,
 				D54E9CC2272B507C00AA2330 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D54E9CC5272B507C00AA2330 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D54E9CC6272B507C00AA2330 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D54E9CCA272B507D00AA2330 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,15 +287,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6HATL4S2M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JailbreakTester/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "JB Tester";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +306,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.shaft7.JailbreakTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development PP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,15 +318,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6HATL4S2M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JailbreakTester/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "JB Tester";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +337,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.shaft7.JailbreakTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development PP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
